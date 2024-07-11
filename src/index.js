@@ -52,9 +52,9 @@ const joinList = (key, strList) => {
 
 const createMD = (key) => {
   import(`./constants/${key}.js`)
-    .then(({ default: list, TODO_LIST }) => {
+    .then(({ default: list, todo }) => {
       
-      const todoMD = asListStr('todo', TODO_LIST)
+      const todoMD = asListStr('todo', todo)
 
       const listMD = asListStr('list', list)
 
