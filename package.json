@@ -1,0 +1,12 @@
+{
+  "name": "the-list",
+  "version": "1.0.0",
+  "description": "ths list of my life",
+  "main": "index.js",
+  "scripts": {
+    "create-md": "node ./src/index.js"
+  },
+  "author": "AlanQtten",
+  "private": true,
+  "type": "module"
+}
