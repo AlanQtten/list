@@ -1,17 +1,12 @@
 import fs from "node:fs"
 
+/**
+ * @param {string} a 
+ * @param {string} b 
+ * @returns 
+ */
 const sorter = (a, b) => {
-  const a_is_en = /[a-zA-Z]/.test(a[0])
-  const b_is_en = /[a-zA-Z]/.test(b[0])
-
-  if(!a_is_en && b_is_en) {
-    return -1
-  }
-  if(!b_is_en && a_is_en) {
-    return 1
-  }
-
-  return a.localeCompare(b)
+  return a.localeCompare(b, 'en', { sensitivity: 'base' })
 }
 
 const isUnique = (list) => {
